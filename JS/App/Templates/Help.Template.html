@@ -1,0 +1,16 @@
+﻿<div id="helpBlock" class="aboutBlock">
+    <div class="modalMessageContainer">
+        <div class="message">Help</div>
+        <div class="close" data-ng-click="helpCtrl.stopVideo()">X</div>
+    </div>
+    <!--<div class="row" style="width: 103px;margin: 0px auto;">
+        <div class="col-sm-12" data-ng-click="helpOn('B')">Beginner</div>
+        <div class="col-sm-12" data-ng-click="helpOn('M')">Moderate</div>
+        <div class="col-sm-12"data-ng-click="helpOn('E')">Expert</div>
+    </div>-->
+    <video id="helpvideo" controls="controls" autoplay="autoplay">
+        <source src="Contents/Video/Beginner_x264.mp4" type="video/mp4" />
+        <source src="Contents/Video/Beginner_libtheora.ogv" type="video/ogg" />
+    </video>
+    <div title="Alert" class="showModal"></div>
+</div>

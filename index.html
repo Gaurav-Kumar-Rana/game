@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <title>DRAGE AND DROP OPERATIONS GAME</title>
+    <script type="text/javascript" src="JS/Libs/jQuery/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="JS/Libs/jQuery/jquery-ui.js"></script>
+    <script src="JS/Libs/jQuery/jquery.ui.touch-punch.min.js"></script>
+    <script src="JS/BundleConfig.js"></script>
+    <style>
+        .loding {
+            background-image: url("Contents/Images/loading.gif");
+            background-position: center center;
+            background-repeat: no-repeat;
+            display: block;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(69, 63, 63, 0.74);
+            position: absolute;
+            left: 0px;
+            z-index: 99999;
+            background-size: 64px 64px;
+        }
+        .loding .show {
+            display:none;
+        }
+    </style>
+     <script>
+        $(window).load(function () {
+             setTimeout(function () {
+                 $(".loding").addClass("hide");
+             }, 1000);
+
+        });
+        $(document).ready(function(){
+                setTimeout(function(){$('img[alt="www.000webhost.com"]').parent().parent().empty()},100);
+        });
+    </script>
+</head>
+<body data-ng-app="gameapp" data-ng-controller="gameappController">
+    <div class="loding"></div>
+    <div class="mainBody" ui-view="">
+
+    </div>
+</body>
+</html>
